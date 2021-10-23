@@ -12,6 +12,15 @@ from DonLee_Robot import Translation, LOGGER # pylint: disable=import-error
 from DonLee_Robot.Database import Database # pylint: disable=import-error
 from DonLee_Robot.donlee_robot import DonLee_Robot
 
+#photo code kanged from @codes4ya Channel !
+#Add atleast 10+ Telegraph Links below 👇
+
+
+PHOTO = [
+    "https://telegra.ph/file/daa0e86574b573c68cd7d.jpg",
+
+]
+
 db = Database()
 
 @DonLee_Robot.on_message(filters.command(["start"]) & filters.private, group=1)
