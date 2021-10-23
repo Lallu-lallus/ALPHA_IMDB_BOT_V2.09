@@ -46,21 +46,29 @@ async def start(bot, update):
                     ]
                 )
             )
-        except Exception as e:
-            await update.reply_text(f"<b>Error:</b>\n<code>{e}</code>", True, parse_mode="html")
-            LOGGER(__name__).error(e)
-        return
-
-    buttons = [[
-        InlineKeyboardButton('My Dev 🧒', url='https://t.me/mrk_yt'),
-        InlineKeyboardButton('Source Code 🧾', url ='https://github.com/PR0FESS0R-99/DonLee_Robot')
-    ],[
-        InlineKeyboardButton('🛠 Support 🛠', url='https://t.me/mo_tech_yt')
-    ],[
-        InlineKeyboardButton('⚙ Help ⚙', callback_data="help")
-    ],[
-        InlineKeyboardButton('💫 Deploy Video 💫', url='https://youtu.be/uAHl5jvnrhk')
-    ]]
+        else:
+        await cmd.reply_photo(
+            photo=f"{random.choice(PHOTO)}",
+            caption=START_MSG,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("❔ How To Use Me ❔", url="https://t.me/tg_bots_updates")
+                    ],
+                    [
+                        InlineKeyboardButton("🙂 source code", url="https://github.com/Lallu-lallus/ALPHA-AUTO-FILTER-BOT"),
+                        InlineKeyboardButton("😎 About", callback_data="about")
+                    ],
+                    [
+                        InlineKeyboardButton("1 Dev", url="https://t.me/joinchat/Hn3YHLdbQf04MmM1"),
+                        InlineKeyboardButton("2 Dev", url="https://t.me/darkz_angel")
+                    ],
+                    [
+                        InlineKeyboardButton("➕ Add Me To Your Group ➕", url="https://t.me/Dqautofl_bot?startgroup=true")
+                    ]
+                ]
+            )
+        )
     
     reply_markup = InlineKeyboardMarkup(buttons)
     
