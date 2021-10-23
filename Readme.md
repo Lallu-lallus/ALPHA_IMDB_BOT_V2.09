@@ -48,6 +48,10 @@ Just Sent Any Text As Query It Will Search For All Connected Chat's Files In Its
 </p>
 </details>
 
+#### Deploy To Heroku Alpha Botz
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Lallu-lallus/ALPHA_IMDB_BOT)
+
 <details><summary>Auto Filter 2.9 Donlee</summary>
 <p>
 <br>
